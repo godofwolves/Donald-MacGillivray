@@ -4,7 +4,8 @@ from gopigo import *	#Has the basic functions for controlling the GoPiGo Robot
 import sys	#Used for closing the running program
 print ("This is a basic example for the GoPiGo Robot control")
 print ("Press:\n\tp: begin dance \n\tx: Stop GoPiGo Robot\n\tz: Exit\n")
-
+set_left_motor(200)
+set_right_motot(200)
 def chorus():
     fwd()
     time.sleep(0.05)
@@ -26,7 +27,7 @@ while True:
 	a=raw_input()	# Fetch the input from the terminal
 	
 	if a=='p':
-	    print("working")
+	    print("Donald MacGillivray")
 	    right()
 	    time.sleep(10)
 	    chorus()
